@@ -1,0 +1,20 @@
+### NE555 클럭 만들기   
+![image](https://user-images.githubusercontent.com/48755335/178935686-e3c521ae-cd52-46b7-ab83-3612f7b74278.png)
+![image](https://user-images.githubusercontent.com/48755335/178936172-fa8b4073-ccd2-442e-ac57-4be018b6cb8f.png)
+참고: http://zunu.egloos.com/m/3818562   
+
+#### 원하는 값   
+Th = 0.002s   
+Tl = 0.018s   
+
+#### 소자 값   
+C1 = 10u   
+C2 = 0.01u   
+R1 = 298   
+R2 = 2.6865k   
+
+![image](https://user-images.githubusercontent.com/48755335/178935686-e3c521ae-cd52-46b7-ab83-3612f7b74278.png)
+
+### 결론   
+duty cycle이 50% 이상일 때만 된다는 문제점이 있다.   
+duty cycle = (R1 + R2) / (R1 + 2 * R2)로 계산되기 때문
